@@ -1,0 +1,50 @@
+/*
+CommonJS规范定义的包特性：
+1.顶层目录包含package.json文件；
+2.bin目录存放二进制文件；
+3.lib目录存放js文件；
+4.doc目录存放文档；
+5.test目录存放单元测试。
+可以通过npm init自动生成package.json
+ */
+{
+    "name": "appName",
+    "version": "0.0.1",
+    "author": "king",
+    "description":"introduce to me",
+    "main":"main.js",  //入口文件，默认index
+    "keywords":"js,json",
+    "respository":{   //仓库托管地址
+        "type":"git",
+        "url":"http://url"
+    },
+    "bugs":[  //提交bug地址
+    {
+        "url": "http://url",
+        "email":"bug@example.com"
+    }
+    ],
+    "contributors":[
+    {
+        "name": "xxx",
+        "email":"xxx@example.com"
+    }
+    ],
+    "licese":"MIT",
+    "engines":{"node": "0.10.x"},
+    "script":{
+        "start": "node index.js"
+    },
+    "private": true,
+    "scripts":{
+        "start":"node ./www"
+    },
+    "dependencies":{
+        "express": "~5.0.0",
+        "debug":"~2.0.0",
+        "jade":"~1.6.0"
+    },
+    "devdenpendencies":{
+        "grunt":"~0.5.1"
+    }
+}

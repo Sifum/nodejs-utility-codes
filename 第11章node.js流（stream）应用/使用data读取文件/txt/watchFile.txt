@@ -1,0 +1,3 @@
+fs.appendFileSync(filename, data[,options])
+add filename to appendFileSync.txt 
+21111

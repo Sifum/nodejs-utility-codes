@@ -1,0 +1,25 @@
+安装express：
+npm install -g express-generator
+
+创建工程：
+在一个目录下：
+express -e express-helloworld
+
+进入express-helloworld下载依赖包：
+npm install  //依照package.json安装node_modules
+
+//项目目录说明：
+bin ： 用于存放启动项目的脚本文件
+node_modules: 存放所有的项目依赖库
+public : 用于存放静态文件（css，js，img等）
+routes：用于存放路由文件
+views： 用于存放页面文件（ejs模板）
+package.json：项目依赖配置及开发者信息
+app.js:应用核心配置文件
+
+调试项目：
+npm start
+
+
+备注：
+1.依照bin\www文件中“var port = normalizePort(process.env.PORT || '3000');”，打开网址：http://localhost:3000/

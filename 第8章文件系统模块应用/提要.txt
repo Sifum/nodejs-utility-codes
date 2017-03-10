@@ -1,0 +1,2 @@
+文件系统模块的I/O操作时对标准POSIX函数的简单封装。
+POSIX（Portable Operating System Interface)可移植操作系统接口
